@@ -1,0 +1,24 @@
+{
+  "name": "designpatterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangying2345/DesignPatterns.git"
+  },
+  "author": "zhangying",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangying2345/DesignPatterns/issues"
+  },
+  "homepage": "https://github.com/zhangying2345/DesignPatterns#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "typescript": "^3.4.3",
+    "yaml-loader": "^0.5.0"
+  }
+}
