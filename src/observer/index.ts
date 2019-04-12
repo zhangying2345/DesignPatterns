@@ -6,7 +6,7 @@ interface subs {
 }
 
 class MsgSource {
-  subscriber: [];
+  subscriber: subs[] = [];
 
   constructor() {
 
@@ -33,8 +33,6 @@ class MsgSource {
 // 信息消费者
 class MsgConsum {
   constructor(private id: string, private callback: any) {
-    this.id = id;
-    this.callback = callback;
   }
 }
 
@@ -42,6 +40,10 @@ let msgSource = new MsgSource();
 let msgConsum = new MsgConsum('consume-1', () => {
   console.log("I am consume-1");
 });
+let msgConsum_2 = new MsgConsum('consume-2', () => {
+  console.log("I am consume-2");
+});
 
 msgSource.addSubscribe(msgConsum);
+msgSource.addSubscribe(msgConsum_2);
 msgSource.sendMsgs();
